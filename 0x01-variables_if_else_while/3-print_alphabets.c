@@ -18,7 +18,7 @@ int main(void)
 			cr++;
 		}
 	while
-		(hr <= 'z') {
+		(hr <= 'Z') {
 			putchar(hr);
 			hr++;
 		}
