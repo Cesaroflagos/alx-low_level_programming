@@ -12,7 +12,7 @@ for (n = 0; n <= 9; n++)
 _putchar('0');
 for (multi = 1; multi <= 9; multi++)
 {
-_putchar('.');
+_putchar(',');
 _putchar(' ');
 
 pro = n * multi;
