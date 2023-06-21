@@ -21,7 +21,7 @@ _putchar(' ');
 
 pro = num * multi;
 if (pro <= 99)
-_putchar(',');
+_putchar(' ');
 if (pro <= 9)
 _putchar(' ');
 if (pro >= 100)
