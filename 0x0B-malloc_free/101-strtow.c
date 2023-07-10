@@ -69,12 +69,13 @@ for (c = 0; c < words; c++)
 while (str[i] == ' ')
 i++;
 alphabets = word_len(str + i);
-ss[c] = malloc(sizeof(char *) * (alphabets + 1));
+ss[c] = malloc(sizeof(char) * (alphabets + 1));
 
 if (ss[c] == NULL)
 {
 for (; c >= 0; c--)
 free(ss[c]);
+
 free(ss);
 return (NULL);
 }
