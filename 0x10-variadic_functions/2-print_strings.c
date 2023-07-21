@@ -20,15 +20,13 @@ va_start(ap, n);
 for (v = 0; v < n; v++)
 {
 str = va_arg(ap, char *);
-if (!str)
-str = "nil";
-if (!separator)
+if (str == NULL)
+printf("(nil)");
+else
 printf("%s", str);
 
-else if (separator && v == 0)
-printf("%s", str);
-else
-printf("%s%s", separator, str);
+if (v != (n - 1) && separator != NULL)
+printf("%s", separator);
 }
 printf("\n");
 va_end(ap);
